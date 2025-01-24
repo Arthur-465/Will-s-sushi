@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    /* Cores principais */
+    --primary-color: #9C1B1B; /* Vinho - Destaques, botões */
+    --secondary-color: #B85C5C; /* Vinho Claro - Detalhes do destaque*/
+    --text-color:#070707;
+
+    /* fundos cores */
+    --conteiner-color: #333333; /* Preto Claro - Texto principal */
+    --background-color: linear-gradient(to bottom, #f6de9c, #ffff); /* Degradê suave de bege para branco */
+
+    /* Detalhes */
+    --accent-color: #b87404; /* Dourado - Para detalhes sofisticados */
+
+    /* Fontes */
+    --fonte-primaria:"Merriweather", serif;
+    --fonte-secundaria:"Playfair Display", serif;
+    --fonte-terciaria:"Roboto", serif;
+}
+
+header{
+    background-color: var(--conteiner-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header a{
+    padding: 1%;
+    text-align: start;
+    text-decoration: none;
+    font-family: var(--fonte-terciaria);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    max-width: 14%;
+}
+
+header a:hover{
+    text-decoration: underline solid var(--accent-color);
+}
+
+header h1{
+    padding: 3%;
+    color: var(--primary-color);
+    font-family: var(--fonte-primaria);
+    font-size: 600;
+}
+
+body{
+    background: var(--background-color);
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2.5rem; 
+    padding: 1% 3%;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0.10rem solid #000000;
+    padding: 1%;
+}
+
+.opcoes h2{
+    text-decoration: underline solid var(--accent-color);
+    font-family: var(--fonte-primaria);
+}
+
+.opcoes h3{
+    font-family: var(--fonte-secundaria);
+}
+
+.opcoes p{
+    font-family: var(--fonte-secundaria);
+    max-width: 70%;
+}
+
+.CARDpratos {
+    display: flex;
+    flex-direction:column
+}
+
+.CARDpratos div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 0.5% 0;
+    margin-top: 10%;
+    gap: 1rem;
+    background-color: var(--conteiner-color);
+    font-family: var(--fonte-terciaria);
+}

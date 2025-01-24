@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    /* Cores principais */
+    --primary-color: #9C1B1B; /* Vinho - Destaques, botões */
+    --secondary-color: #B85C5C; /* Vinho Claro - Detalhes do destaque*/
+    --text-color:#070707;
+
+    /* fundos cores */
+    --conteiner-color: #333333; /* Preto Claro - Texto principal */
+    --background-color: linear-gradient(to bottom, #f6de9c, #ffff); /* Degradê suave de bege para branco */
+
+    /* Detalhes */
+    --accent-color: #b87404; /* Dourado - Para detalhes sofisticados */
+
+    /* Fontes */
+    --fonte-primaria:"Merriweather", serif;
+    --fonte-secundaria:"Playfair Display", serif;
+    --fonte-terciaria:"Roboto", serif;
+}
+
+header{
+    background-color: var(--conteiner-color)
+}
+
+.titulo__img{
+    width: 10%;
+    height: auto;
+    border: 0.10rem solid var(--accent-color);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    padding: 1% 3%;
+    gap: 1.5rem;
+    color: var(--primary-color);
+}
+
+.titulo__texto{
+    font-family: var(--fonte-primaria);
+    font-size: 2.70rem;
+    font-weight: 600;
+}
+
+.subtitulo{
+    padding: 1% 3%;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.menu{
+    display: flex;
+    gap: 3rem;
+    padding: 1% 3%;
+}
+
+.menu__ancoras{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--fonte-terciaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.menu__ancoras:hover{
+    text-decoration:underline solid var(--accent-color);
+}
+
+body{
+    background: var(--background-color);
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem; 
+    padding: 1% 3%;
+}
+
+.textos_primarios{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.textos_primarios h1{
+    font-family: var(--fonte-primaria);
+    font-size: 1000;
+}
+
+.textos_primarios h2{
+    font-family: var(--fonte-primaria);
+    font-size: 600;
+}
+
+.textos_secundarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.textos_container{
+    background-color: var(--conteiner-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5%;
+    width: 95%;
+    height: auto;
+    gap: 1rem;
+}
+
+.textos_container h2{
+    font-family: var(--fonte-primaria);
+    font-size: 600;
+    color: var(--primary-color);
+}
+
+.textos_container ul {
+    padding-left: 1%;
+    font-family: var(--fonte-secundaria);
+    font-size: 500;
+}
+
+.pratos{
+    display: flex;
+    flex-direction: column;
+}
+
+.pratos div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.textos_pratos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.pratos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pratos__img{
+    width: 20%;
+    height: auto;
+    border: 0.10rem solid #070707;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.pratos__demonstração{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5%;
+    gap: 1rem;
+    height: 100%;
+}
+
+.pratos__demonstração h3{
+    font-family: var(--fonte-primaria);
+    color: var(--primary-color);
+    text-decoration:underline solid var(--accent-color);
+}
+
+.pratos__demonstração p{
+    text-align: left; 
+    max-width: 30%;
+    font-family: var(--fonte-secundaria); 
+}
+
+.textos_duvidas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.textos_duvidas h2{
+    display: flex;
+    margin-bottom: 1%;
+    color: var(--primary-color);
+    font-size: 1000;
+}
+
+.textos_duvidas h3{
+    font-family: var(--fonte-secundaria);
+    font-size: 600;
+}
+
+.textos_duvidas p{
+    font-family: var(--fonte-secundaria);
+    font-size: 400;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 0.5% 0;
+    margin-top: 10%;
+    gap: 1rem;
+    background-color: var(--conteiner-color);
+    font-family: var(--fonte-terciaria);
+}
