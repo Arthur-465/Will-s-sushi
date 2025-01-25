@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Will's</title>
+    <link rel="stylesheet" href="./styles/pedidos.css">
+</head>
+<body>
+    <header>
+        <h1 class="Descrição">Pedidos da Will's Sushi</h1>
+        <a href="index.html">Voltar para a página principal</a>
+    </header>
+    <main>
+        <h2 class="Texto">Faça seus pedidos aqui, baseado no cardápio</h2>
+        <section class="info">
+            <h3>Informações pessoais</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="resposta" placeholder="Digite aqui">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" class="resposta" placeholder="Digite aqui">
+
+            <label for="endereco">Endereço de entrega:</label>
+            <input type="text" id="endereco" class="endereco" placeholder="Digite aqui">
+        </section>
+
+        <section class="pay">
+            <h3>Formas de pagamento</h3>
+            <p>Pagamentos somente na entrega</p>
+            <div class="pay__botoes">
+                <input type="radio" id="card" name="payment" class="resposta">
+                <label for="card">Cartão débito ou crédito</label>
+        
+                <input type="radio" id="pix" name="payment" class="resposta">
+                <label for="pix">Pix</label>
+        
+                <input type="radio" id="money" name="payment" class="resposta">
+                <label for="money">Dinheiro</label>
+            </div>
+        </section>
+
+        <section class="pedidos">
+            <h3>Pedidos</h3>
+            <label for="orders">Deixe seus pedidos aqui:</label>
+            <textarea id="orders" class="orders" placeholder="Digite aqui"></textarea>
+        </section>
+        <section class="botao">
+            <button type="submit" class="comprar">Comprar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contatos e parcerias</p>
+        <p>E-mail: arthurw.bastos@outlook.com</p>
+        <p>Telefone: (21) 98392-2003</p>
+    </footer>
+</body>
+</html>
